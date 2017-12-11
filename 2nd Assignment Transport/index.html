@@ -2,153 +2,211 @@
 <html class="no-js">
 
 <head>
-    <title>NZ travels</title>
-    <meta name="author" content="Oliver Faatili">
-    <meta name="description" content="Yoobee assignment 2">
-    <meta name="keywords" content="2017,js,Jquery,yoobee,assignment,travel">
-    <link rel="shortcut icon" href="favicon.ico" type="images/.icon">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <title>NZ travels</title>
+  <meta name="author" content="Oliver Faatili">
+  <meta name="description" content="Yoobee assignment 2">
+  <meta name="keywords" content="2017,js,Jquery,yoobee,assignment,travel">
+  <link rel="shortcut icon" href="favicon.ico" type="images/.icon">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+    crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
 </head>
 
 <body>
- 
-       <div class="all-Filters">
-            <div class="filter-Days">
-                    <fieldset id="Days">
-<form-check-inline>
-<h3>Amount of days Traveling</h3>
-<div class="form-check form-check-inline">
-  <label class="form-check-label">
-    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="daysRadio1" value="days3"> 1
-  </label>
-</div>
-<div class="form-check form-check-inline">
-  <label class="form-check-label">
-    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="daysRadio1" value="days3"> 2
-  </label>
-</div>
-<div class="form-check form-check-inline">
-  <label class="form-check-label">
-    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="daysRadio1" value="days3" > 3
-  </label>
-</div>
-<div class="form-check form-check-inline">
-  <label class="form-check-label">
-    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="daysRadio4" value="days4"> 4
-  </label>
-</div>
-<div class="form-check form-check-inline">
-  <label class="form-check-label">
-    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="daysRadio5" value="days5" > 5
-  </label>
-</div>
-<br>
-<div class="form-check form-check-inline">
-  <label class="form-check-label">
-    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="daysRadio6" value="days6"> 6
-  </label>
-</div>
-<div class="form-check form-check-inline">
-  <label class="form-check-label">
-    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="daysRadio7" value="days7"> 7
-  </label>
-</div>
-<div class="form-check form-check-inline">
-  <label class="form-check-label">
-    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="daysRadio8" value="days8" > 8
-  </label>
-</div>
-<div class="form-check form-check-inline">
-  <label class="form-check-label">
-    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="daysRadio9" value="days9"> 9
-  </label>
-</div>
-<div class="form-check form-check-inline">
-  <label class="form-check-label">
-    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="daysRadio10" value="days10" > 10
-  </label>
-</div>
-<br>
-<div class="form-check form-check-inline">
-  <label class="form-check-label">
-    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="daysRadio11" value="days11"> 11
-  </label>
-</div>
-<div class="form-check form-check-inline">
-  <label class="form-check-label">
-    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="daysRadio12" value="days12"> 12
-  </label>
-</div>
-<div class="form-check form-check-inline">
-  <label class="form-check-label">
-    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="daysRadio13" value="days13" > 13
-  </label>
-</div>
-<div class="form-check form-check-inline">
-  <label class="form-check-label">
-    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="daysRadio14" value="days14"> 14
-  </label>
-</div>
-<div class="form-check form-check-inline">
-  <label class="form-check-label">
-    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="daysRadio15" value="days15" > 15
-  </label>
-</div>
-           </form-check-inline>                   
-                    </fieldset>
-</div>
-       
+  <nav>
+    <div class="nav"></div>
 
-<div class="filter-People">
-        <fieldset id="People">
-             <form-check-inline>
+  </nav>
 
-<h3> Amount of people traveling </h3>
-<div class="form-check form-check-inline">
-  <label class="form-check-label">
-    <input class="form-check-input" type="radio" name="inlineRadiaPeople" id="daysRadio1" value="days3"> 1
-  </label>
-</div>
-<div class="form-check form-check-inline">
-  <label class="form-check-label">
-    <input class="form-check-input" type="radio" name="inlineRadiaPeople" id="daysRadio1" value="days3"> 2
-  </label>
-</div>
-<div class="form-check form-check-inline">
-  <label class="form-check-label">
-    <input class="form-check-input" type="radio" name="inlineRadiaPeople" id="daysRadio1" value="days3" > 3
-  </label>
-</div>
-<div class="form-check form-check-inline">
-  <label class="form-check-label">
-    <input class="form-check-input" type="radio" name="inlineRadiaPeople" id="daysRadio4" value="days4"> 4
-  </label>
-</div>
-<div class="form-check form-check-inline">
-  <label class="form-check-label">
-    <input class="form-check-input" type="radio" name="inlineRadiaPeople" id="daysRadio5" value="days5" > 5
-  </label>
-</div>
-<div class="form-check form-check-inline">
-  <label class="form-check-label">
-    <input class="form-check-input" type="radio" name="inlineRadiaPeople" id="daysRadio6" value="days6"> 6
-  </label>
-</div>
-<div class="KMs-distance">
+
+  <table>
+    <tr>
+      <td>
+        <div class="all-Filters">
+          <div class="filter-Days">
+            <fieldset id="Days">
+              <form-check-inline>
+                <h3>Amount of days Traveling</h3>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="daysRadio" value="days1"> 1
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="daysRadio" value="days2"> 2
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="daysRadio" value="days3"> 3
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="daysRadio" value="days4"> 4
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="daysRadio" value="days5"> 5
+                  </label>
+                </div>
+                <br>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="daysRadio" value="days6"> 6
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="daysRadio" value="days7"> 7
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="daysRadio" value="days8"> 8
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="daysRadio" value="days9"> 9
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="daysRadio" value="days10"> 10
+                  </label>
+                </div>
+                <br>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="daysRadio" value="days11"> 11
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="daysRadio" value="days12"> 12
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="daysRadio" value="days13"> 13
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="daysRadio" value="days14"> 14
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="daysRadio" value="days15"> 15
+                  </label>
+                </div>
+              </form-check-inline>
+            </fieldset>
+
+          </div>
+      </td>
+
+      <td>
+        <div class="filter-People">
+          <fieldset id="People">
+            <form-check-inline>
+
+              <h3> Amount of people traveling </h3>
+              <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="radio" name="inlineRadiaPeople" id="peopleRadio" value="people1"> 1
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="radio" name="inlineRadiaPeople" id="peopleRadio" value="people2"> 2
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="radio" name="inlineRadiaPeople" id="peopleRadio" value="people3"> 3
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="radio" name="inlineRadiaPeople" id="peopleRadio" value="people4"> 4
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="radio" name="inlineRadiaPeople" id="peopleRadio" value="people5"> 5
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="radio" name="inlineRadiaPeople" id="peopleRadio" value="people6"> 6
+                </label>
+              </div>
+            </form-check-inline>
+          </fieldset>
+        </div>
+      </td>
+      <td>
+        <div class="KMs-distance">
           <div class="form-group">
-    <label for="inputKms"></label>
-    <input type="text" class="form-control" id="inputKms" placeholder="Aproximate KM traveling">
-         </form-check-inline>
-                 </fieldset>
-                       </div>
-                            </div>
+            <label for="inputKms"></label>
+            <input type="text" class="form-control" id="inputKms" placeholder="Aproximate KM's">
+      </td>
+    </tr>
+  </table>
 
-     
+
+  <div class="vehicle-list">
+    <table class="vehicle-table">
+      <tr>
+        <td>
+          <div data-id="" class="video-list--item">
+            <div>
+              <h4>Motorbike</h4>
+              <p>dfdfdfd</p>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div data-id="" class="video-list--item">
+            <div>
+              <h4>Small car</h4>
+              <p>dfdfdfd</p>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div data-id="" class="video-list--item">
+            <div>
+              <h4>Large car</h4>
+              <p>dfdfdfd</p>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div data-id="" class="video-list--item">
+            <div>
+              <h4>Motorhome</h4>
+              <p>dfdfdfd</p>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
 </body>
 
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+  crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/main.js"></script>
 

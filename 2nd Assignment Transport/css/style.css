@@ -3,3 +3,29 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 p{font-size: 12px;}
 body{font-family: 'Oswald', sans-serif;}
 a{ text-decoration: none;}
+
+
+
+.nav{
+    height:80px;
+    width:100%;
+    color:whitesmoke;
+}
+
+table{
+display:flex;
+justify-content: center}
+
+.filter-Days{
+    display:flex;
+    justify-content: center;
+    align-content: center;}
+
+td{
+    padding: 20px;
+}
+
+.vehicle-table{
+    border:2px;
+    border-color:black;
+}
