@@ -4,21 +4,12 @@
         var transport = null;
         
 
-        var daysValue = document.getElementById("daysRadio").value,
-            peoplesValue = document.getElementById("peopleRadio").value;
+        var daysValue = document.getElementsByName("inlineRadioOptions").value,
+            peoplesValue = document.getElementsByName("inlineRadioPeople").value;
 
 
 function init(){
-//get vehicle name from JSON file
-$.getJSON('json/transport.json', function (data) {
-    vehicle = data.vehicle;
-    displayVehicl(vehicle);
-});
 
-//get vehicle name from JSON file
-$.getJSON('json/transport.json', function (data) {
-    vehicleDays = data.days;
-});
 
 function getHTMLVehicleItem(vehicle){
 return `<<td>
@@ -27,16 +18,17 @@ return `<<td>
             <p>dfdfdfd</p>
             </div> </div>
         </td>`
-}
     }
+    
+}
 
-function (){
-$.getJSON('json/transport.json', functio (data){
-
+function createVehicleArray(){
+var motorbike = [];
+$.getJSON('json/transport.json', function (data){
+motorbike = data.motorbike
 });
 
 }
-
 
 
 
